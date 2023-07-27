@@ -50,7 +50,7 @@ $extractor = new Inlm\SchemaGenerator\DibiBridge\DibiAdapter($connection, $ignor
 **Note:** saving of schema is not supported, use `DibiDumper`.
 
 
-# DibiDumper
+### DibiDumper
 
 `DibiDumper` executes SQL queries directly in database.
 
