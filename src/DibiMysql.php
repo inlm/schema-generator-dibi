@@ -71,6 +71,10 @@
 			');
 
 			foreach ($rows as $row) {
+				if ($row['character_set_name'] === '') {
+					continue;
+				}
+
 				$this->tableMetas[(string) $row['table_name']]['CHARACTER SET'] = $row['character_set_name'];
 			}
 
@@ -101,7 +105,7 @@
 					}
 				}
 
-				if ($rowMeta['CHARACTER SET'] !== NULL) {
+				if ($rowMeta['CHARACTER SET'] !== NULL && $rowMeta['CHARACTER SET'] !== '') {
 					if (!isset($meta['CHARACTER SET']) || $meta['CHARACTER SET'] !== $rowMeta['CHARACTER SET']) {
 						$options['CHARACTER SET'] = $rowMeta['CHARACTER SET'];
 					}
