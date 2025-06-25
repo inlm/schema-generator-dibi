@@ -1,5 +1,7 @@
 <?php
 
+	declare(strict_types=1);
+
 	namespace Inlm\SchemaGenerator\DibiBridge;
 
 	use Inlm\SchemaGenerator\Configuration;
