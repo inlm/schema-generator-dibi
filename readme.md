@@ -16,7 +16,7 @@
 composer require inlm/schema-generator-dibi
 ```
 
-Schema Generator requires PHP 5.6.0 or later and [Dibi](https://dibiphp.com/) 3.0 or newer.
+Schema Generator requires PHP 8.0 or later and [Dibi](https://dibiphp.com/) 3.0 or newer.
 
 
 ## Documentation
