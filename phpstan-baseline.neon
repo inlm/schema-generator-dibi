@@ -1,0 +1,115 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Binary operation "\." between string and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Cannot access offset ''CHARACTER SET'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 3
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Method Inlm\\SchemaGenerator\\DibiBridge\\DibiMysql\:\:getTables\(\) should return array\<string\> but returns list\.$#'
+			identifier: return.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$column of method CzProject\\SqlSchema\\ForeignKey\:\:addColumn\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$column of method CzProject\\SqlSchema\\Index\:\:addColumn\(\) expects CzProject\\SqlSchema\\IndexColumn\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$defaultValue of method CzProject\\SqlSchema\\Column\:\:setDefaultValue\(\) expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$length of method CzProject\\SqlSchema\\IndexColumn\:\:setLength\(\) expects int\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$name of method CzProject\\SqlSchema\\Table\:\:addColumn\(\) expects CzProject\\SqlSchema\\Column\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$name of method CzProject\\SqlSchema\\Table\:\:addForeignKey\(\) expects CzProject\\SqlSchema\\ForeignKey\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$name of method CzProject\\SqlSchema\\Table\:\:addIndex\(\) expects CzProject\\SqlSchema\\Index\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$onDeleteAction of method CzProject\\SqlSchema\\ForeignKey\:\:setOnDeleteAction\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$onUpdateAction of method CzProject\\SqlSchema\\ForeignKey\:\:setOnUpdateAction\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$s of static method Inlm\\SchemaGenerator\\Utils\\DataTypeParser\:\:parse\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#1 \$targetColumn of method CzProject\\SqlSchema\\ForeignKey\:\:addTargetColumn\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Parameter \#4 \$options of method CzProject\\SqlSchema\\Table\:\:addColumn\(\) expects array\<int\|string, bool\|float\|int\|string\|null\>, array\<string, mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Part \$referencedSchema \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Property Inlm\\SchemaGenerator\\DibiBridge\\DibiMysql\:\:\$tableMetas \(array\<string, array\<string, mixed\>\>\) does not accept array\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/DibiMysql.php
+
+		-
+			message: '#^Property Inlm\\SchemaGenerator\\DibiBridge\\DibiMysql\:\:\$tableMetas \(array\<string, array\<string, mixed\>\>\) does not accept array\<string, mixed\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/DibiMysql.php
